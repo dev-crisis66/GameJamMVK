@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
-    public int entity1;
-    public int entity2;
-    public void Accouplement(){
-        if (empty(entity1))
-        {
-            
-        }
-        
-    }
+
     
     // Start is called before the first frame update
     void Start()
