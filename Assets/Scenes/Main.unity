@@ -362,8 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 687d4791eba059c459a4e37c102dab71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 461718591}
-  EnemyParent: {fileID: 1662578723}
+  EntityPrefab: {fileID: 461718591}
+  EntityParent: {fileID: 1662578723}
 --- !u!1 &801940079
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662578724}
   m_Layer: 0
-  m_Name: Enemies
+  m_Name: Entities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -564,7 +564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 417862184641276253, guid: bc0e982ee4359e3f29a0554dde733328, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Entity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc0e982ee4359e3f29a0554dde733328, type: 3}
