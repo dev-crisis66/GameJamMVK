@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EntityPropertis : MonoBehaviour
 {
-    private int i = 0;
+    
     public TextMeshProUGUI textYeux;
     public TextMeshProUGUI textPeau;
     public TextMeshProUGUI textCheveux;
@@ -14,7 +14,8 @@ public class EntityPropertis : MonoBehaviour
     public string CouleurCheveux;
     public int Sexe;
     public int Age;
-    public string Nom;
+    public string NomA;
+    public int idEntity;
 
     public void TestViteFait(){
         textYeux.text = CouleurYeux;
