@@ -134,6 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &236636398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8418672925143084819, guid: 0e59d1fa932758796b096ac1645c0a8d, type: 3}
+  m_PrefabInstance: {fileID: 1679613618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &310019805
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,8 +597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0783c29fd4c0acf1e992e65bce0ffb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity1: -1
-  entity2: -1
+  entitiesToBaise: []
+  selectedEntities: {fileID: 0}
+  propertiId: 
 --- !u!4 &914568591
 Transform:
   m_ObjectHideFlags: 0
@@ -644,11 +650,11 @@ RectTransform:
   - {fileID: 1104551947}
   - {fileID: 2139001791}
   m_Father: {fileID: 1639160589}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.1386528, y: 0}
+  m_AnchoredPosition: {x: -6.6, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918305806
@@ -702,6 +708,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: 0783c29fd4c0acf1e992e65bce0ffb67, type: 3}
+        m_TargetAssemblyTypeName: EntityPropertis, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -793,7 +811,7 @@ RectTransform:
   - {fileID: 1679613619}
   - {fileID: 445054625}
   m_Father: {fileID: 1421742781}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -838,6 +856,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023286943}
   m_CullTransparentMesh: 1
+--- !u!114 &1104101502 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8927480777442353416, guid: 0e59d1fa932758796b096ac1645c0a8d, type: 3}
+  m_PrefabInstance: {fileID: 1679613618}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1104551946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1127,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1639160589}
   - {fileID: 1023286944}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1152,13 +1182,14 @@ MonoBehaviour:
   textCheveux: {fileID: 571591082}
   textSexe: {fileID: 1962091317}
   textAge: {fileID: 766503207}
+  textId: {fileID: 1104101502}
   CouleurYeux: Maron
   CouleurPeau: NOIR
   CouleurCheveux: Brun
   Sexe: 0
   Age: 0
   NomA: 
-  idEntity: 0
+  idEntity: 1
 --- !u!4 &1617336546
 Transform:
   m_ObjectHideFlags: 0
@@ -1183,9 +1214,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639160589}
+  - component: {fileID: 1639160590}
   m_Layer: 0
   m_Name: Entitys
-  m_TagString: Untagged
+  m_TagString: Entities
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1197,16 +1229,29 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639160588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 100}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 51.5, y: 51.5, z: 51.5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 918305805}
   - {fileID: 1944610069}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  - {fileID: 918305805}
+  m_Father: {fileID: 1421742781}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1639160590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639160588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32823dfca11ea489f89e4e049ca5ee3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetChild: {fileID: 0}
 --- !u!1001 &1679613618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1373,6 +1418,21 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8418672925143084812, guid: 0e59d1fa932758796b096ac1645c0a8d, type: 3}
   m_PrefabInstance: {fileID: 1679613618}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1679613622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236636398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0783c29fd4c0acf1e992e65bce0ffb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entitiesToBaise: []
+  selectedEntities: {fileID: 0}
+  propertiId: 
 --- !u!1 &1944610068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1467,7 @@ RectTransform:
   - {fileID: 310019806}
   - {fileID: 1617336546}
   m_Father: {fileID: 1639160589}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1553,13 +1613,14 @@ MonoBehaviour:
   textCheveux: {fileID: 571591082}
   textSexe: {fileID: 1962091317}
   textAge: {fileID: 766503207}
+  textId: {fileID: 1104101502}
   CouleurYeux: BLANC
   CouleurPeau: BLANC
   CouleurCheveux: BLANC
   Sexe: 0
   Age: 0
   NomA: PAS DROLE
-  idEntity: 0
+  idEntity: 2
 --- !u!4 &2139001791
 Transform:
   m_ObjectHideFlags: 0
