@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EntityProperties
   - Entities
+  - ValueProperties
   layers:
   - Default
   - TransparentFX
