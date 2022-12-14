@@ -2088,7 +2088,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4858410538082882968}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: cb13e7972d95299fe8a21bcf4971c366, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AccoupleOn
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9191610947183188876
 GameObject:
   m_ObjectHideFlags: 0
