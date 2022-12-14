@@ -19,6 +19,7 @@ public class EntityPropertis : MonoBehaviour
     public int idEntity;
 
     public void ViewStats(){
+        
         textYeux.text = CouleurYeux;
         textPeau.text = CouleurPeau;
         textCheveux.text = CouleurCheveux;
