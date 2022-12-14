@@ -4,12 +4,13 @@ using UnityEngine;
 public class EntityPropertis : MonoBehaviour
 {
     
-    public TextMeshProUGUI textYeux;
-    public TextMeshProUGUI textPeau;
-    public TextMeshProUGUI textCheveux;
-    public TextMeshProUGUI textSexe;
-    public TextMeshProUGUI textAge;
-    public TextMeshProUGUI textId;
+    public TextMeshProUGUI textProprieteYeux;
+    public TextMeshProUGUI textProprietePeau;
+    public TextMeshProUGUI textProprieteCheveux;
+    public TextMeshProUGUI textProprietesexe;
+    public TextMeshProUGUI textProprieteAge;
+    public TextMeshProUGUI texProprietetId;
+    public string Propriete;
     public string CouleurYeux;
     public string CouleurPeau;
     public string CouleurCheveux;
@@ -19,12 +20,12 @@ public class EntityPropertis : MonoBehaviour
     public int idEntity;
 
     public void ViewStats(){
-        textYeux.text = CouleurYeux;
-        textPeau.text = CouleurPeau;
-        textCheveux.text = CouleurCheveux;
-        textSexe.text = ""+Sexe;
-        textAge.text = ""+Age;
-        textId.text=""+idEntity;
+        textProprieteYeux.text = CouleurYeux;
+        textProprietePeau.text = CouleurPeau;
+        textProprieteCheveux.text = CouleurCheveux;
+        textProprietesexe.text = ""+Sexe;
+        textProprieteAge.text = ""+Age;
+        texProprietetId.text=""+idEntity;
     }
     // Start is called before the first frame update
     void Start()

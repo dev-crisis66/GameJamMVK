@@ -6,23 +6,29 @@ using TMPro;
 public class Accouplement : MonoBehaviour
 {
 
-    public string[] entitiesToBaise;
+    public string[,] entitiesToBaise = new string[2,5];
     public GameObject selectedEntities;
-    public string propertiId;
 
     public void setSelectedEntitie()
     {
 
     }
     Accouplement() {
-        entitiesToBaise = new string[2];
+        //entitiesToBaise = new string[2];
     }
     public void AccoupleOn() 
     {
-
-        propertiId = GameObject.Find("ProprieteId").GetComponent<TextMeshProUGUI>().text;
+        string propertiYeux = GameObject.Find("ProprieteCouleurYeux").GetComponent<TextMeshProUGUI>().text;
+        string propertiPeau = GameObject.Find("ProprieteCouleurPeau").GetComponent<TextMeshProUGUI>().text;
+        string propertiCheveux = GameObject.Find("ProprieteCouleurCheveux").GetComponent<TextMeshProUGUI>().text;
+        string propertiSexe = GameObject.Find("ProprieteSexe").GetComponent<TextMeshProUGUI>().text;
+        string propertiAge = GameObject.Find("ProprieteAge").GetComponent<TextMeshProUGUI>().text;
+        string propertiId = GameObject.Find("ProprieteId").GetComponent<TextMeshProUGUI>().text;
         Debug.Log(propertiId);
-        entitiesToBaise[0] = propertiId;
+        //entitiesToBaise[].
+
+        entitiesToBaise[0,0] = propertiId;
+        Debug.Log(entitiesToBaise);
         // entities = GameObject.FindWithTag("Entities").GetComponentsInChildren<GameObject>();
         // var jose = GameObject.FindWithTag("Entities").GetComponentsInChildren<EntityPropertis>();
           
@@ -30,6 +36,11 @@ public class Accouplement : MonoBehaviour
         // {
         //     Debug.Log(item.GetComponent<EntityPropertis>().idEntity);
         // }
+    }
+
+
+    public void Annuler(){
+        entitiesToBaise = new string[2,5];
     }
     // Start is called before the first frame update
     void Start()
