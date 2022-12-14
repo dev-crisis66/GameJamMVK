@@ -1,0 +1,25 @@
+Index: Assets/Scripts/CreateEntity.cs
+===================================================================
+diff --git a/Assets/Scripts/CreateEntity.cs b/Assets/Scripts/CreateEntity.cs
+--- a/Assets/Scripts/CreateEntity.cs	
++++ b/Assets/Scripts/CreateEntity.cs	
+@@ -16,13 +16,13 @@
+ 
+     public void Create(int nbrEntity)
+     {
+-        // Instantiate(EntityPrefab, new Vector3(Random.Range(-5, 5), 0, 0), Quaternion.identity,EntityParent.transform);
++        Instantiate(EntityPrefab, new Vector3(Random.Range(-5, 5), 0, 0), Quaternion.identity,EntityParent.transform);
+                 
+-        // for (int i = 0; i < nbrEntity; i++)
+-        // {
+-        //     var player =  Instantiate(EntityPrefab, new Vector3(Random.Range(-5, 5),0,Random.Range(-5, 5)),Quaternion.identity,EntityParent.transform);
+-        //     player.GetComponent<Moves>().name = i.ToString();
+-        // }
++        for (int i = 0; i < nbrEntity; i++)
++        {
++             var player =  Instantiate(EntityPrefab, new Vector3(Random.Range(-5, 5),0,Random.Range(-5, 5)),Quaternion.identity,EntityParent.transform);
++             player.GetComponent<Moves>().name = i.ToString();
++        }
+     }
+     
+     // Update is called once per frame
