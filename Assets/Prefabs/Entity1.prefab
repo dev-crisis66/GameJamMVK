@@ -1,61 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &687902661791994889
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 687902661791994891}
-  - component: {fileID: 687902661791994888}
-  m_Layer: 0
-  m_Name: Entity1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &687902661791994891
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687902661791994889}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22055.078, y: -9527.518, z: -265070.5}
-  m_LocalScale: {x: 2652.25, y: 2652.25, z: 2652.25}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 687902662119041532}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &687902661791994888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687902661791994889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eac9beb7fdbae7a3b8097df06643625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textYeux: {fileID: 0}
-  textPeau: {fileID: 0}
-  textCheveux: {fileID: 0}
-  textSexe: {fileID: 0}
-  textAge: {fileID: 0}
-  CouleurYeux: Maron
-  CouleurPeau: NOIR
-  CouleurCheveux: Brun
-  Sexe: 0
-  Age: 0
-  NomA: 
-  idEntity: 0
 --- !u!1 &687902662119041533
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,13 +26,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687902662119041533}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.019417476, y: 0.019417476, z: 0.019417476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 687902663705381431}
-  - {fileID: 687902661791994891}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -179,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 687902661791994888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EntityPropertis, Assembly-CSharp
         m_MethodName: ViewStats
         m_Mode: 1
