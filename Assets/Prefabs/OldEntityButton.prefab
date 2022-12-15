@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 687902662119041534}
   - component: {fileID: 687902662119041535}
   m_Layer: 5
-  m_Name: Entity1
+  m_Name: OldEntityButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
