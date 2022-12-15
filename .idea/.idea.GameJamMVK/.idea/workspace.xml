@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc14001-92f8-4818-a1f7-2352698e97c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJamMVK/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJamMVK/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EntityProperties.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EntityProperties.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+    <list default="true" id="0bc14001-92f8-4818-a1f7-2352698e97c2" name="Changes" comment="Magnifique Card">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/30a14ab0771e44378641d348b389df29158a00/9e/884bc941/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/cfacd2/Documents/idems/Unity/GameJamMVK/Assets/Prefabs/Entity.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entity.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -91,7 +86,7 @@
       <workItem from="1670938266901" duration="2373000" />
       <workItem from="1671004244943" duration="2822000" />
       <workItem from="1671013937775" duration="14576000" />
-      <workItem from="1671090295075" duration="762000" />
+      <workItem from="1671090295075" duration="1206000" />
     </task>
     <task id="LOCAL-00001" summary="Scroll bar refont">
       <created>1671009619884</created>
@@ -121,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671033336219</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Magnifique Card">
+      <created>1671094431808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671094431808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +149,7 @@
     <MESSAGE value="Font" />
     <MESSAGE value="Card Button close fusion add 5 element" />
     <MESSAGE value="ta mere" />
-    <option name="LAST_COMMIT_MESSAGE" value="ta mere" />
+    <MESSAGE value="Magnifique Card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Magnifique Card" />
   </component>
 </project>
