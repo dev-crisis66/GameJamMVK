@@ -9,7 +9,6 @@ public class CreateCycle : MonoBehaviour
 
 
     public GameObject PreFabCycle;
-    public Accouplement accouplement= new Accouplement();
 
     public string[,] entitiesToBaise = new string[2,4];
     public string[,] entityFetus= new string[30,4];
