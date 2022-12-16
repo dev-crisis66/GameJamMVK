@@ -6,6 +6,8 @@ public class CreateEntity : MonoBehaviour
     public GameObject PrefabEntity;
     public GameObject PrefabProperties;
 
+    public string[] propertiesWin = new string[3];
+
     private string[] ListEyes = {"Marron", "Vert", "Bleu", "Colorer"};
     private string[] ListHair = { "Blond", "Roux", "Chauve", "Artiste"};
     private string[] ListSkin = {"Vert", "Bleu", "Blanc", "Rouge" };
@@ -49,6 +51,7 @@ public class CreateEntity : MonoBehaviour
                 string hair = Prop[1];
                 string skin = Prop[2];
                 newEntity.GetComponent<EntityPropertis>().SetProperties(eyes,hair,skin,0);
+
                 // Debug.Log(newEntity.GetComponent<EntityPropertis>().Hair);
                 
             }

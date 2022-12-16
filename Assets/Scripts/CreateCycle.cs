@@ -11,12 +11,15 @@ public class CreateCycle : MonoBehaviour
     public GameObject PreFabCycle;
 
     public string[,] entitiesToBaise = new string[2,4];
-    public string[,] entityFetus= new string[30,4];
 
     public List<string[]> FetusProperties = new List<string[]>();
     private GameObject ValueProperties;
 
+    private GameObject ValuePropertiesWin;
+
     private int nbCycle = 1;
+
+    string[] propertiesWin = new string[3];
 
     //public Transform Parent;
     // Start is called before the first frame update
@@ -26,6 +29,26 @@ public class CreateCycle : MonoBehaviour
         nbCycle++;
     }
 
+    private void createWin(){
+        string[] ListEyes = {"Marron", "Vert", "Bleu", "Colorer"};
+        string[] ListHair = { "Blond", "Roux", "Chauve", "Artiste"};
+        string[] ListSkin = {"Vert", "Bleu", "Blanc", "Rouge" };
+        
+        
+        int rnd = Random.Range(0,4);
+        propertiesWin[0] = ListEyes[rnd];
+
+        rnd = Random.Range(0,4);
+        propertiesWin[1] = ListHair[rnd];
+
+        rnd = Random.Range(0,4);
+        propertiesWin[2] = ListSkin[rnd];
+
+        ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[0].text = propertiesWin[0];
+        ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[1].text = propertiesWin[1];
+        ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[2].text = propertiesWin[2];
+    }
+
 
 
     void Start()
@@ -33,6 +56,10 @@ public class CreateCycle : MonoBehaviour
         var newCycle = Instantiate(PreFabCycle,transform);
         newCycle.GetComponent<CreateEntity>().number = -1;
         ValueProperties = GameObject.FindWithTag("ValueProperties");
+        ValuePropertiesWin = GameObject.FindWithTag("ValuePropertiesWin");
+
+        createWin();
+
     }
 
     public void CreateNewCycle(){
@@ -78,12 +105,13 @@ public class CreateCycle : MonoBehaviour
         // Debug.Log("TRAITEMENT DE LA BAISE");
     
         // Debug.Log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"+entitiesToBaise[0,0]);
+
+
         string[] Prop = new string[4];
         for (int i = 0; i < 4; i++)
         {
-            int blabla = Random.Range(0,2);
-            // Debug.Log("Hasard : "+blabla);
-            Prop[i] = entitiesToBaise[blabla,i];
+            int rnd = Random.Range(0,2);
+            Prop[i] = entitiesToBaise[rnd,i];
         }
         ClearEntityToBaise();
         FetusProperties.Add(Prop);
