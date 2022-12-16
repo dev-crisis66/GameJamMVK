@@ -36,9 +36,8 @@ public class CreateCycle : MonoBehaviour
     }
 
     public void CreateNewCycle(){
-        //
         var newcycle = Instantiate(PreFabCycle,transform);
-        Debug.Log("Count Fetus CreateNewCycle : "+FetusProperties.Count);
+        // Debug.Log("Count Fetus CreateNewCycle : "+FetusProperties.Count);
         newcycle.GetComponent<CreateEntity>().fetusProperties = new List<string[]>(FetusProperties);
         FetusProperties.Clear();
         CheckNbCycle();
@@ -49,7 +48,6 @@ public class CreateCycle : MonoBehaviour
      public void setSelectedEntitie()
     {
 
-        //entity.InitialisationEntity();
         var map = new Dictionary<string, TextMeshProUGUI>(); 
         foreach (var item in ValueProperties.GetComponentsInChildren<TextMeshProUGUI>())
             map.Add(item.transform.name, item);
@@ -76,32 +74,32 @@ public class CreateCycle : MonoBehaviour
 
     void AccoupleOn(string[,] entitiesToBaise) 
     {
-        toString();
-        Debug.Log("TRAITEMENT DE LA BAISE");
+        // toString();
+        // Debug.Log("TRAITEMENT DE LA BAISE");
     
-        Debug.Log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"+entitiesToBaise[0,0]);
+        // Debug.Log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"+entitiesToBaise[0,0]);
         string[] Prop = new string[4];
         for (int i = 0; i < 4; i++)
         {
             int blabla = Random.Range(0,2);
-            Debug.Log("Hasard : "+blabla);
+            // Debug.Log("Hasard : "+blabla);
             Prop[i] = entitiesToBaise[blabla,i];
         }
         ClearEntityToBaise();
         FetusProperties.Add(Prop);
-        Debug.Log("Count Fetus CONNARK : "+FetusProperties.Count);
+        // Debug.Log("Count Fetus CONNARK : "+FetusProperties.Count);
     }
     public void ClearEntityToBaise(){
         entitiesToBaise = new string[2,4];
-        toString();
+        // toString();
     }
 
     void toString(){
-        Debug.Log("-----------------------------------------DEBUT DU TOSTRING-----------------------------------------");
+         Debug.Log("-----------------------------------------DEBUT DU TOSTRING-----------------------------------------");
         for (var i = 0; i < 2; i++)
         {
             int iedit=i+1;
-            Debug.Log("#######Entity "+iedit+"########");
+             Debug.Log("#######Entity "+iedit+"########");
             for (int y = 0; y < 4; y++)
             {
                 Debug.Log(entitiesToBaise[i,y]);

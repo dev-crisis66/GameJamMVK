@@ -38,18 +38,18 @@ public class CreateEntity : MonoBehaviour
             var newEntity5 = Instantiate(PrefabEntity,transform);
             newEntity5.GetComponent<EntityPropertis>().SetProperties(ListEyes[2],ListHair[3],ListSkin[0],0);
         }else{
-            Debug.Log("Count de fetus : "+fetusProperties.Count);;
+            // Debug.Log("Count de fetus : "+fetusProperties.Count);
             for (int i = 0; i < fetusProperties.Count; i++)
             {
 
                 var newEntity = Instantiate(PrefabEntity,transform);
                 string[] Prop = fetusProperties[i];
-                Debug.Log("Prop de 0 : "+Prop[0]);
+                // Debug.Log("Prop de 0 : "+Prop[0]);
                 string eyes = Prop[0];
                 string hair = Prop[1];
                 string skin = Prop[2];
                 newEntity.GetComponent<EntityPropertis>().SetProperties(eyes,hair,skin,0);
-                Debug.Log(newEntity.GetComponent<EntityPropertis>().Hair);
+                // Debug.Log(newEntity.GetComponent<EntityPropertis>().Hair);
                 
             }
         }
