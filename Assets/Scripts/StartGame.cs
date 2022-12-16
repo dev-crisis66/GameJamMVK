@@ -5,6 +5,6 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
     public void StartTheGame(){
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("EntityProperties");
     }
 }
