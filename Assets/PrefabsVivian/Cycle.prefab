@@ -38,8 +38,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 755, y: 100}
+  m_AnchoredPosition: {x: 388, y: -50}
+  m_SizeDelta: {x: 776, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &373250113205155211
 CanvasRenderer:
@@ -93,6 +93,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabEntity: {fileID: 2911333780972463398, guid: 093d386d9153379c891fb3bc2e3b546c, type: 3}
   PrefabProperties: {fileID: 6653509229483404054, guid: a107b366b75013da5a5df67b4902c28f, type: 3}
+  propertiesWin:
+  - 
+  - 
+  - 
   number: 0
 --- !u!114 &4331157961637910017
 MonoBehaviour:

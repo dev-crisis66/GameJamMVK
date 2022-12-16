@@ -55,17 +55,17 @@ public class CreateCycle : MonoBehaviour
 
 
         //Pour les tests
+/*
+        propertiesWin[0] = "Marron";
 
-        // propertiesWin[0] = "Marron";
+        propertiesWin[1] = "Blond";
 
-        // propertiesWin[1] = "Blond";
+        propertiesWin[2] = "Vert";
 
-        // propertiesWin[2] = "Vert";
-
-        // ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[0].text = propertiesWin[0];
-        // ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[1].text = propertiesWin[1];
-        // ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[2].text = propertiesWin[2];
-
+        ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[0].text = propertiesWin[0];
+        ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[1].text = propertiesWin[1];
+        ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[2].text = propertiesWin[2];
+*/
         //Fin du test FDP
 
 
@@ -124,9 +124,6 @@ public class CreateCycle : MonoBehaviour
         // toString();
         // Debug.Log("TRAITEMENT DE LA BAISE");
     
-        // Debug.Log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"+entitiesToBaise[0,0]);
-
-
         string[] Prop = new string[4];
         for (int i = 0; i < 4; i++)
         {
@@ -135,7 +132,7 @@ public class CreateCycle : MonoBehaviour
         }
         ClearEntityToBaise();
         FetusProperties.Add(Prop);
-        // Debug.Log("Count Fetus CONNARK : "+FetusProperties.Count);
+        // Debug.Log("Count Fetus  : "+FetusProperties.Count);
     }
     public void ClearEntityToBaise(){
         entitiesToBaise = new string[2,4];

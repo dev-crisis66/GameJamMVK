@@ -130,6 +130,7 @@ public class CreateEntity : MonoBehaviour
             //Cinquieme entiter
             var newEntity6 = Instantiate(PrefabEntity,transform);
             newEntity6.GetComponent<EntityPropertis>().SetProperties(ListEyes[3],ListHair[2],ListSkin[2],Names[5]);
+            
         }else{
             // Debug.Log("Count de fetus : "+fetusProperties.Count);
             for (int i = 0; i < fetusProperties.Count; i++)
