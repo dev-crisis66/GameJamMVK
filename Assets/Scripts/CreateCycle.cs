@@ -30,92 +30,11 @@ public class CreateCycle : MonoBehaviour
             
         nbCycle++;
 
-    
+
     }
 
     private void createWin(){
-        /*string[] Names = {"Aaren"
-,
-"Aarika"
-,
-"Abagael"
-,
-"Abagail"
-,
-"Abbe"
-,
-"Abbey"
-,
-"Abbi"
-,
-"Abbie"
-,
-"Abby"
-,
-"Abbye"
-,
-"Abigael"
-,
-"Abigail"
-,
-"Abigale"
-,
-"Abra"
-,
-"Ada"
-,
-"Adah"
-,
-"Adaline"
-,
-"Adan"
-,
-"Adara"
-,
-"Adda"
-,
-"Addi"
-,
-"Addia"
-,
-"Addie"
-,
-"Addy"
-,
-"Adel"
-,
-"Adela"
-,
-"Adelaida"
-,
-"Adelaide"
-,
-"Adele"
-,
-"Adelheid"
-,
-"Adelice"
-,
-"Adelina"
-,
-"Adelind"
-,
-"Adeline"
-,
-"Adella"
-,
-"Adelle"
-,
-"Adena"
-,
-"Adey"
-,
-"Adi"
-,
-"Adiana"
-,
-"Adina"
-};*/
+
         string[] ListEyes = {"Marron", "Vert", "Bleu", "Colorer"};
         string[] ListHair = { "Blond", "Roux", "Chauve", "Artiste"};
         string[] ListSkin = {"Vert", "Bleu", "Blanc", "Rouge" };
@@ -141,7 +60,7 @@ public class CreateCycle : MonoBehaviour
 
         // propertiesWin[1] = "Blond";
 
-        // propertiesWin[2] = "Blanc";
+        // propertiesWin[2] = "Vert";
 
         // ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[0].text = propertiesWin[0];
         // ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[1].text = propertiesWin[1];
