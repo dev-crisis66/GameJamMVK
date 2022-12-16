@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 public class CreateEntity : MonoBehaviour
 {
 
@@ -53,7 +54,10 @@ public class CreateEntity : MonoBehaviour
                 newEntity.GetComponent<EntityPropertis>().SetProperties(eyes,hair,skin,0);
 
                 // Debug.Log(newEntity.GetComponent<EntityPropertis>().Hair);
-                
+                if (Prop[0] == propertiesWin[0] && Prop[1] == propertiesWin[1] && Prop[2] == propertiesWin[2])
+                {
+                    SceneManager.LoadScene("Win");
+                }
             }
         }
 

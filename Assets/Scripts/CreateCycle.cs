@@ -26,10 +26,96 @@ public class CreateCycle : MonoBehaviour
     private void CheckNbCycle(){
         if(nbCycle >4)
             SceneManager.LoadScene("Start");
+            
+            
         nbCycle++;
+
+    
     }
 
     private void createWin(){
+        /*string[] Names = {"Aaren"
+,
+"Aarika"
+,
+"Abagael"
+,
+"Abagail"
+,
+"Abbe"
+,
+"Abbey"
+,
+"Abbi"
+,
+"Abbie"
+,
+"Abby"
+,
+"Abbye"
+,
+"Abigael"
+,
+"Abigail"
+,
+"Abigale"
+,
+"Abra"
+,
+"Ada"
+,
+"Adah"
+,
+"Adaline"
+,
+"Adan"
+,
+"Adara"
+,
+"Adda"
+,
+"Addi"
+,
+"Addia"
+,
+"Addie"
+,
+"Addy"
+,
+"Adel"
+,
+"Adela"
+,
+"Adelaida"
+,
+"Adelaide"
+,
+"Adele"
+,
+"Adelheid"
+,
+"Adelice"
+,
+"Adelina"
+,
+"Adelind"
+,
+"Adeline"
+,
+"Adella"
+,
+"Adelle"
+,
+"Adena"
+,
+"Adey"
+,
+"Adi"
+,
+"Adiana"
+,
+"Adina"
+};*/
         string[] ListEyes = {"Marron", "Vert", "Bleu", "Colorer"};
         string[] ListHair = { "Blond", "Roux", "Chauve", "Artiste"};
         string[] ListSkin = {"Vert", "Bleu", "Blanc", "Rouge" };
@@ -47,6 +133,23 @@ public class CreateCycle : MonoBehaviour
         ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[0].text = propertiesWin[0];
         ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[1].text = propertiesWin[1];
         ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[2].text = propertiesWin[2];
+
+
+        //Pour les tests
+
+        // propertiesWin[0] = "Marron";
+
+        // propertiesWin[1] = "Blond";
+
+        // propertiesWin[2] = "Blanc";
+
+        // ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[0].text = propertiesWin[0];
+        // ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[1].text = propertiesWin[1];
+        // ValuePropertiesWin.GetComponentsInChildren<TextMeshProUGUI>()[2].text = propertiesWin[2];
+
+        //Fin du test FDP
+
+
     }
 
 
@@ -66,6 +169,7 @@ public class CreateCycle : MonoBehaviour
         var newcycle = Instantiate(PreFabCycle,transform);
         // Debug.Log("Count Fetus CreateNewCycle : "+FetusProperties.Count);
         newcycle.GetComponent<CreateEntity>().fetusProperties = new List<string[]>(FetusProperties);
+        newcycle.GetComponent<CreateEntity>().propertiesWin = propertiesWin;
         FetusProperties.Clear();
         CheckNbCycle();
     }
@@ -82,18 +186,15 @@ public class CreateCycle : MonoBehaviour
         string propertiYeux = ValueProperties.GetComponentsInChildren<TextMeshProUGUI>()[0].text;
         string propertiPeau = ValueProperties.GetComponentsInChildren<TextMeshProUGUI>()[1].text;
         string propertiCheveux = ValueProperties.GetComponentsInChildren<TextMeshProUGUI>()[2].text;
-        string propertiAge = ValueProperties.GetComponentsInChildren<TextMeshProUGUI>()[3].text;
         if (entitiesToBaise[0,0] == null)
         {
             entitiesToBaise[0,0] = propertiYeux;
             entitiesToBaise[0,1] = propertiPeau;
             entitiesToBaise[0,2] = propertiCheveux;
-            entitiesToBaise[0,3] = propertiAge;
         }else{
             entitiesToBaise[1,0] = propertiYeux;
             entitiesToBaise[1,1] = propertiPeau;
             entitiesToBaise[1,2] = propertiCheveux;
-            entitiesToBaise[1,3] = propertiAge;
             AccoupleOn(entitiesToBaise);
         }
         //toString();
